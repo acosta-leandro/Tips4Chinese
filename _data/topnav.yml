@@ -3,9 +3,7 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
-    - title: News
+    - title: Blog & News
       url: /news
 
 #Topnav dropdowns
@@ -22,11 +20,11 @@ topnav_dropdowns:
           external_url: http://stackoverflow.com/questions/tagged/jekyll
         - title: Jekyll on my blog
           external_url: http://idratherbewriting.com/category-jekyll/
-    - title: Products
+    - title: HSK
       folderitems:
-        - title: Jekyll Documentation Theme
-          url: /mydoc_introduction.html
-        - title: Product 1
-          url: /p1_landing_page.html
-        - title: Product 2
+        - title: HSK - Word List
+          url: /hsk_word_list.html
+        - title: HSK - Writing Test
+          url: /p2_landing_page.html
+        - title: HSK - Listening Test
           url: /p2_landing_page.html

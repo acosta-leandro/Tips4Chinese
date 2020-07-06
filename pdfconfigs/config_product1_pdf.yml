@@ -6,7 +6,6 @@ output: pdf
 product: hskwordlist
 print_title: Product 1 documentation
 print_subtitle: version 1.0
-output: pdf
 defaults:
   -
     scope:

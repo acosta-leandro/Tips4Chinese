@@ -4,7 +4,7 @@ keywords: mydoc
 sidebar: hskWordList_sidebar
 toc: false
 permalink: hsk_word_list.html
-folder: product1
+folder: hskwordlist
 ---
 
 <div class="row">
@@ -22,7 +22,9 @@ folder: product1
             <div class="panel-body">
                 <h4>HSK 1</h4>
                 <p>150 Words</p>
-            <a href="/wl_hsk2.html" class="btn btn-primary">Learn More</a>
+            <a href="/wl_hsk1.html" class="btn btn-primary">Learn More</a>
+            <a href="href='{{ page.url | remove: "/wl_hsk1.html" }}'" class="btn btn-primary">Learn More</a>
+                <li class="active"><a title="{{folderitem.title}}" class="btn btn-primary" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}teste</a></li>
             </div>
         </div>
     </div>

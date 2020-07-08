@@ -99,7 +99,7 @@ defaults:
 sidebars:
 - home_sidebar
 - mydoc_sidebar
-- hskWordList_sidebar
+- hsk_sidebar
 - product2_sidebar
 - other
 

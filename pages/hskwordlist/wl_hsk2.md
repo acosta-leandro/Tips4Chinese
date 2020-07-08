@@ -2,7 +2,7 @@
 title: HSK 2 (Word List)
 keywords: sample
 summary: "Hsk 2 - Word List"
-sidebar: hskWordList_sidebar
+sidebar: hsk_sidebar
 permalink: wl_hsk2.html
 folder: hskwordlist
 ---

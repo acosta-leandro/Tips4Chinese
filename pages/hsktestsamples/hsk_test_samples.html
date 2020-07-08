@@ -1,0 +1,168 @@
+---
+title: HSK - Test Samples
+tags: [special_layouts]
+last_updated: November 30, 2015
+keywords: shuffle, card layout, dynamic grid, doc portal, support portal
+summary: "This layout shows an example of a knowledge-base style navigation system, where there is no hierarchy, just groups of pages that have certain tags."
+permalink: hsk_test_samples.html
+sidebar: hsk_sidebar
+folder: hsktestsamples
+---
+
+
+
+{% if site.output == "pdf" %}
+{{site.data.alerts.note}} The content on this page doesn't display well on PDF, but I included it anyway so you could see the problems this layout poses if you're including it in PDF.  {{site.data.alerts.end}}
+{% endif %}
+
+{% unless site.output == "pdf" %}
+<script src="js/jquery.shuffle.min.js"></script>
+<script src="js/jquery.ba-throttle-debounce.min.js"></script>
+{% endunless %}
+
+<div class="filter-options">
+    <button class="btn btn-primary" data-group="all">All</button>
+    <button class="btn btn-primary" data-group="getting_started">HSK 1</button>
+    <button class="btn btn-primary" data-group="formatting">HSK 2</button>
+    <button class="btn btn-primary" data-group="publishing">HSK 3</button>
+    <button class="btn btn-primary" data-group="content-types">HSK 4</button>
+    <button class="btn btn-primary" data-group="single_sourcing">HSK 5</button>
+    <button class="btn btn-primary" data-group="special_layouts">HSK 6</button>
+</div>
+
+<div id="grid" class="row">
+
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting_started"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 1</div>
+            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Left</button>
+                        <button type="button" class="btn btn-primary">Middle</button>
+                        <button type="button" class="btn btn-primary">Right</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["content-types"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 2</div>
+            <div class="panel-body">
+                This section lists different content types and how to work with them.
+                <div class="btn-group">
+                    <a href="#" role="button" class="btn btn-success btn-xs" id="label-btn"  aria-disabled="true">T</a>
+                    <button type="button" class="btn btn-default btn-xs" aria-label="Import" data-toggle="tooltip" title="Import">
+                        <span class="glyphicon glyphicon-import" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["formatting"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 3</div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label>Company</label>
+                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                            <label class="btn btn-default form-control">
+                                <input type="radio">Apple
+                            </label>
+                            <label class="btn btn-default form-control">
+                                <input type="radio">Microsoft
+                            </label>
+                            <label class="btn btn-default form-control">
+                                <input type="radio">Google
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["single_sourcing"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 4</div>
+            <div class="panel-body">These topics cover strategies for single_sourcing. Single sourcing refers to strategies for re-using the same source in different outputs for different audiences or purposes.
+                <ul>
+                    {% for page in site.pages %}
+                    {% for tag in page.tags %}
+                    {% if tag == "single_sourcing" %}
+                    <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["publishing"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 5</div>
+            <div class="panel-body">When you're building, publishing, and deploying your Jekyll site, you might find these topics helpful.
+                <ul>
+                    {% for page in site.pages %}
+                    {% for tag in page.tags %}
+                    {% if tag == "publishing" %}
+                    <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["special_layouts"]'>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">HSK 6</div>
+            <div class="panel-body">
+                These pages highlight special layouts outside of the conventional page and TOC hierarchy.
+                <ul>
+                    {% for page in site.pages %}
+                    {% for tag in page.tags %}
+                    {% if tag == "special_layouts" %}
+                    <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- sizer -->
+    <div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>
+
+
+</div><!-- /#grid -->
+
+{% unless site.output == "pdf" %}
+{% include initialize_shuffle.html %}
+{% endunless %}
+
+{{site.data.alerts.note}} This was mostly an experiment to see if I could break away from the hierarchical TOC and provide a different way of arranging the content. However, this layout is somewhat problematic because it doesn't allow you to browse other navigation options on the side while viewing a topic.{{site.data.alerts.end}}
+

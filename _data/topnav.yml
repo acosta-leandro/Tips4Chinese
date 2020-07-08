@@ -15,6 +15,6 @@ topnav_dropdowns:
         - title: HSK - Word List
           url: /hsk_word_list.html
         - title: HSK - Writing Test
-          url: /p2_landing_page.html
+          url: /hsk_writting_test.html
         - title: HSK - Listening Test
           url: /p2_landing_page.html

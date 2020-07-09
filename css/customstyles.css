@@ -789,6 +789,7 @@ dd {margin-left:20px;}
 }
 .panel-heading {
     font-weight: bold;
+    margin-bottom:5px;
 }
 
 .note code, .alert code, .warning code, div#toc code, h2 code, h3 code, h4 code {
@@ -1197,4 +1198,16 @@ h4.panel-title {
     .collapse.in{
         display:block !important;
     }
+}
+
+/*set Leandro CSS */
+
+.form-group{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.label-hsk-testCode{
+    vertical-align: middle;
 }

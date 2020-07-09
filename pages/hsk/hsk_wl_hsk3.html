@@ -1,0 +1,25 @@
+---
+title: HSK 3 - Word List
+summary: "HSK 3 - 300 words."
+sidebar: hsk_sidebar
+permalink: hsk_wl_hsk3.html
+folder: hsk
+---
+
+<table>
+  {% for row in site.data.hsk.hskwordlist.hsk3 %}
+    {% if forloop.first %}
+    <tr>
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
+    </tr>
+    {% endif %}
+
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+</table>
+
+{{site.data.alerts.note}}These files have been generated from the latest (as of November 2013) which word lists published by Hanban in September 2012.{{site.data.alerts.end}}

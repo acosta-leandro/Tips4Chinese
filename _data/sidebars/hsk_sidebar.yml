@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: HSK - Word List
+  product: HSK Tips
   version:
   folders:
 
@@ -20,43 +20,47 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: HSK - Word List
-    output: web, pdf
+  - title: HSK - Introduction
+    output: web
     folderitems:
-    - title: HSK - Word List
+      - title: Introduction
+        url: /hsk_introduction.html
+        output: web
+
+  - title: HSK - Word List
+    output: web
+    folderitems:
+    - title: Word List
       url: /hsk_word_list.html
       output: web
 
     - title: Hsk 1
-      url: /wl_hsk1.html
+      url: /hsk_wl_hsk1.html
       output: web, pdf
 
     - title: Hsk 2
-      url: /wl_hsk2.html
+      url: /hsk_wl_hsk2.html
       output: web, pdf
 
     - title: Hsk 3
-      url: /wl_hsk3.html
+      url: /hsk_wl_hsk3.html
       output: web, pdf
 
     - title: Hsk 4
-      url: /wl_hsk4.html
+      url: /hsk_wl_hsk4.html
       output: web, pdf
 
     - title: Hsk 5
-      url: /wl_hsk5.html
+      url: /hsk_wl_hsk5.html
       output: web, pdf
 
     - title: Hsk 6
-      url: /wl_hsk6.html
+      url: /hsk_wl_hsk6.html
       output: web, pdf
 
-
-  - title: HSK - Writing Test
-    url: /hsk_writing_test.html
+  - title: HSK - Test Samples
     output: web
-
-  - title: HSK - Listening Test
-    url: /hsk_listening_test.html
-    output: web
-
+    folderitems:
+    - title: Test Samples
+      url: /hsk_test_samples.html
+      output: web

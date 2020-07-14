@@ -79,8 +79,8 @@ h4[id],
 h5[id],
 h6[id],
 dt[id]{
-padding-top: 60px;
-margin-top: -40px
+    padding-top: 60px;
+    margin-top: -40px
 }
 
 .post-content img {
@@ -363,7 +363,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li.active > a  {
-background-color: #347DBE;
+    background-color: #347DBE;
 }
 
 .nav li a {
@@ -939,7 +939,7 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 /* Strip the outbound icon when this class is present */
 a[href].noCrossRef::after,
 a.no_icon:after
- {
+{
     content:"" !important;
     padding-left: 0;
 }
@@ -1009,7 +1009,7 @@ span.label.label-primary {
     background-color: whitesmoke;
     font-weight: bold;
     color: black;
-    }
+}
 
 a code {
     color: #248EC2;
@@ -1076,7 +1076,7 @@ h2.userMapTitle {
 
 #userMap a:hover {
     text-decoration: none;
-  }
+}
 
 div.arrow {
     max-width: 50px;
@@ -1132,13 +1132,13 @@ div.box.box1 {
 }
 
 #userMap .btn-lg  {
-        white-space: pre-wrap;       /* css-3 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
-        word-wrap: break-word;       /* Internet Explorer 5.5+ */
-        font-size: 14px;
-    }
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    font-size: 14px;
+}
 
 /*
  * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
@@ -1211,3 +1211,32 @@ h4.panel-title {
 .label-hsk-testCode{
     vertical-align: middle;
 }
+/*home head*/
+
+.row {
+    border: dashed blue 1px
+}
+
+.row-first {
+    height: 25vh;
+    min-height: 200px;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    background-image: url('../featured.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.row-first h1{
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+

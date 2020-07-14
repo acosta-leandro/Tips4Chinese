@@ -1,6 +1,6 @@
 ---
 title:  "Test post from last year"
-categories: jekyll update
+categories: Featured
 permalink: test-post-from-last-year.html
 tags: [news]
 ---

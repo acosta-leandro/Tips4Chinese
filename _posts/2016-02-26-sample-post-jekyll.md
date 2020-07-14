@@ -1,6 +1,7 @@
 ---
 title:  "Sample post"
 published: true
+categories: Teste1
 permalink: samplepost.html
 summary: "This is some summary frontmatter for my sample post."
 tags: [news, getting_started]
